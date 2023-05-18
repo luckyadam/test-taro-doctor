@@ -2,7 +2,7 @@ const path = require('path')
 
 const config = {
   projectName: 'test-doctor',
-  date: '2023-522-12',
+  date: '2023-5-12',
   designWidth: 750,
   deviceRatio: {
     640: 2.34 / 2,
@@ -32,7 +32,7 @@ const config = {
     webpackChain(chain, webpack) {
       
     },
-    commonChunks: {},
+    commonChunks: [],
     postcss: {
       pxtransform: {
         enable: true,
