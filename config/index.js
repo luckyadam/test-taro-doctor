@@ -32,7 +32,7 @@ const config = {
     webpackChain(chain, webpack) {
       
     },
-    commonChunks: [],
+    commonChunks: {},
     postcss: {
       pxtransform: {
         enable: true,
