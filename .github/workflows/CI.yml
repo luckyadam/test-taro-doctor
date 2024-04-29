@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: Check libstdc++ version
         run: |
-            /usr/lib/x86_64-linux-gnu/libstdc++.so.6 --version
+            strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep 'GLIBCXX_3.4'
