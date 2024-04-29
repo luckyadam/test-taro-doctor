@@ -3,12 +3,9 @@ name: Check libstdc++ version
 on: [push]
 
 jobs:
-  check-version:
+  check-libstdc-version:
     runs-on: ubuntu-20.04
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
       - name: Check libstdc++ version
         run: |
-          strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
+            /usr/lib/x86_64-linux-gnu/libstdc++.so.6 --version
